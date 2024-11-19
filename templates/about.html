@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mb-4">
+    <!-- Circular Image -->
+    <img src="{{ url_for('static', filename='img/profile.jpg') }}" 
+         alt="Your Photo" 
+         class="rounded-circle" >
+</div>
+
+<!-- Bio Section -->
+<h1 class="text-center">About Me</h1>
+<p class="text-center">A passionate data scientist eager to solve real-world problems using technology.</p>
+
+<!-- Detailed Bio -->
+<section class="mb-4">
+    <h2>Detailed Bio</h2>
+    <p>
+        I have a background in computer science, with a Master's degree specializing in data science. 
+        My journey has included working on diverse projects, such as email spam classification, audio 
+        classification, and web scraping for the 2024 Paris Olympics players. 
+        My professional experiences have honed my skills in Python, SQL, Machine Learning, and Generative AI.
+    </p>
+    <p>
+        I hold certifications in advanced data analysis, machine learning, and generative AI, which 
+        complement my academic accomplishments. My goal is to leverage data to drive insights and 
+        build innovative solutions that create value.
+    </p>
+</section>
+
+<!-- Skills and Expertise -->
+<section class="mb-4">
+    <h2>Skills and Expertise</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Technical Skills</h4>
+            <ul>
+                <li>Programming Languages: Python, SQL</li>
+                <li>Data Analysis Tools: Pandas, NumPy, Matplotlib, Seaborn</li>
+                <li>Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
+                <li>Generative AI: LlamaIndex</li>
+                <li>Web Development: Django, Flask</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h4>Soft Skills</h4>
+            <ul>
+                <li>Communication</li>
+                <li>Problem-solving</li>
+                <li>Teamwork</li>
+                <li>Critical Thinking</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Interests and Hobbies -->
+<section>
+    <h2>Interests and Hobbies</h2>
+    <p>
+        Beyond my professional pursuits, I enjoy exploring data visualization techniques and writing technical 
+        articles. In my free time, I love reading about advancements in AI and contributing to open-source 
+        projects. My hobbies also include photography, hiking, and playing strategy-based games, which keep 
+        my creative juices flowing.
+    </p>
+</section>
+{% endblock %}
