@@ -1,0 +1,36 @@
+/* Subtitle Styling */
+.subtitle {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* Detailed Bio Section */
+.text-justify {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Headings Styling */
+h1, h2, h4 {
+    font-family: 'Arial', sans-serif;
+    color: #222;
+}
+
+/* Skills Section Styling */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Add space between sections */
+hr {
+    border-top: 2px solid #ddd;
+    margin: 30px 0;
+}

@@ -1,13 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="text-center mb-4">
-    <!-- Circular Image -->
-    <img src="{{ url_for('static', filename='img/profile.jpg') }}" 
-         alt="Your Photo" 
-         class="rounded-circle" >
-</div>
-
-<!-- Bio Section -->
 <h1 class="text-center">About Me</h1>
 <p class="text-center">A passionate data scientist eager to solve real-world problems using technology.</p>
 
@@ -51,6 +43,36 @@
             </ul>
         </div>
     </div>
+</section>
+
+<!-- Experience -->
+<section class="mb-4">
+    <h2>Experience</h2>
+    <div>
+        <h4>Data Science Intern</h4>
+        <p><strong>Company Name:</strong> ABC Technologies</p>
+        <p><strong>Duration:</strong> Jan 2024 - Jun 2024</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+            <li>Developed a machine learning pipeline for predicting customer churn with 90% accuracy.</li>
+            <li>Worked on data cleaning, feature engineering, and exploratory data analysis for real-world datasets.</li>
+            <li>Created interactive dashboards using Tableau to visualize business metrics.</li>
+            <li>Collaborated with a team of data scientists and software engineers to deploy predictive models.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Certificates -->
+<section class="mb-4">
+    <h2>Certificates</h2>
+    <ul>
+        <li><strong>Google Data Analytics Professional Certificate</strong> - Coursera</li>
+        <li><strong>TensorFlow Developer Certificate</strong> - Google</li>
+        <li><strong>Python for Everybody Specialization</strong> - University of Michigan</li>
+        <li><strong>Machine Learning with Python</strong> - IBM</li>
+        <li><strong>SQL for Data Science</strong> - UC Davis</li>
+        <li><strong>Generative AI Fundamentals</strong> - Google Cloud</li>
+    </ul>
 </section>
 
 <!-- Interests and Hobbies -->

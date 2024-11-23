@@ -1,0 +1,37 @@
+/* Default Light Theme */
+body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+a.nav-link {
+    color: #ffffff;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.navbar.dark-theme {
+    background-color: #000000;
+}
+
+a.nav-link.dark-theme {
+    color: #f8f9fa;
+}
+
+.btn-outline-light.dark-theme {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-light.dark-theme:hover {
+    background-color: #ffffff;
+    color: #000000;
+}

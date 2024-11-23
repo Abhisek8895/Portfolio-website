@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Projects</h1>
+<p class="text-center">Explore my featured projects. Click on a project for more details.</p>
+
+<div class="container">
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                <img src="{{ url_for('static', filename='images/email_spam.png') }}" class="card-img-top" alt="Email Spam Classifier">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-truncate">Email Spam Classifier</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                <img src="{{ url_for('static', filename='images/audio_classification.png') }}" class="card-img-top" alt="Audio Classification Using Deep Learning">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-truncate">Audio Classification Model</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                <img src="{{ url_for('static', filename='images/olympics_scraper.png') }}" class="card-img-top" alt="2024 Paris Olympics Data Scraper">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-truncate">Olympics Player Data Scraper</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project1Label">Email Spam Classifier</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    A machine learning project that classifies emails as spam or not spam with 95% accuracy. 
+                    It uses techniques like TF-IDF vectorization and a Logistic Regression model. The project 
+                    includes a detailed classification report and a confusion matrix.
+                </p>
+                <a href="https://github.com/your-username/email-spam-classifier" target="_blank" class="btn btn-primary">
+                    GitHub Repository
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project2Label">Audio Classification Using Deep Learning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    A group project for classifying audio files into predefined categories using deep learning. 
+                    Implemented a Convolutional Neural Network (CNN) trained on audio spectrograms for high accuracy.
+                </p>
+                <a href="https://github.com/your-username/audio-classification" target="_blank" class="btn btn-primary">
+                    GitHub Repository
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project 3 Modal -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project3Label">2024 Paris Olympics Data Scraper</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    A web scraper built using Python and BeautifulSoup to collect data on 2024 Paris Olympics players, 
+                    including their names, countries, and medal counts. Exported the data to a CSV file for analysis.
+                </p>
+                <a href="https://github.com/your-username/olympics-data-scraper" target="_blank" class="btn btn-primary">
+                    GitHub Repository
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
