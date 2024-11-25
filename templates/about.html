@@ -1,88 +1,100 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="text-center">About Me</h1>
-<p class="text-center">A passionate data scientist eager to solve real-world problems using technology.</p>
-
-<!-- Detailed Bio -->
-<section class="mb-4">
-    <h2>Detailed Bio</h2>
-    <p>
-        I have a background in computer science, with a Master's degree specializing in data science. 
-        My journey has included working on diverse projects, such as email spam classification, audio 
-        classification, and web scraping for the 2024 Paris Olympics players. 
-        My professional experiences have honed my skills in Python, SQL, Machine Learning, and Generative AI.
-    </p>
-    <p>
-        I hold certifications in advanced data analysis, machine learning, and generative AI, which 
-        complement my academic accomplishments. My goal is to leverage data to drive insights and 
-        build innovative solutions that create value.
-    </p>
-</section>
-
-<!-- Skills and Expertise -->
-<section class="mb-4">
-    <h2>Skills and Expertise</h2>
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
-            <h4>Technical Skills</h4>
-            <ul>
-                <li>Programming Languages: Python, SQL</li>
-                <li>Data Analysis Tools: Pandas, NumPy, Matplotlib, Seaborn</li>
-                <li>Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
-                <li>Generative AI: LlamaIndex</li>
-                <li>Web Development: Django, Flask</li>
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar py-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Detailed Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills and Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificates">Certificates</a>
+                </li>
             </ul>
-        </div>
-        <div class="col-md-6">
-            <h4>Soft Skills</h4>
-            <ul>
-                <li>Communication</li>
-                <li>Problem-solving</li>
-                <li>Teamwork</li>
-                <li>Critical Thinking</li>
-            </ul>
-        </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <section id="bio" class="my-4">
+                <h2>Detailed Bio</h2>
+                <p>
+                    I have a background in computer science, with a Master's degree specializing in data science. 
+                    My journey has included working on diverse projects, such as email spam classification, audio 
+                    classification, and web scraping for the 2024 Paris Olympics players.
+                </p>
+                <p>
+                    I hold certifications in advanced data analysis, machine learning, and generative AI, which 
+                    complement my academic accomplishments. My goal is to leverage data to drive insights and 
+                    build innovative solutions that create value.
+                </p>
+            </section>
+
+            <section id="skills" class="my-4">
+                <h2>Skills and Expertise</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Technical Skills</h4>
+                        <ul>
+                            <li>Programming Languages: Python, SQL</li>
+                            <li>Data Analysis Tools: Pandas, NumPy, Matplotlib, Seaborn</li>
+                            <li>Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
+                            <li>Generative AI: LlamaIndex</li>
+                            <li>Web Development: Django, Flask</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Soft Skills</h4>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Problem-solving</li>
+                            <li>Teamwork</li>
+                            <li>Critical Thinking</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="my-4">
+                <h2>Experience</h2>
+                <div>
+                    <h4>Data Science Intern</h4>
+                    <p><strong>Company Name:</strong> ABC Technologies</p>
+                    <p><strong>Duration:</strong> Jan 2024 - Jun 2024</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Developed a machine learning pipeline for predicting customer churn with 90% accuracy.</li>
+                        <li>Worked on data cleaning, feature engineering, and exploratory data analysis for real-world datasets.</li>
+                        <li>Created interactive dashboards using Tableau to visualize business metrics.</li>
+                        <li>Collaborated with a team of data scientists and software engineers to deploy predictive models.</li>
+                    </ul>
+                </div>
+
+                <!-- <br>
+                <hr>
+                <br> -->
+            </section>
+
+            <section id="certificates" class="my-4">
+                <h2>Certificates</h2>
+                <ul>
+                    <li><strong>Google Data Analytics Professional Certificate</strong> - Coursera</li>
+                    <li><strong>TensorFlow Developer Certificate</strong> - Google</li>
+                    <li><strong>Python for Everybody Specialization</strong> - University of Michigan</li>
+                    <li><strong>Machine Learning with Python</strong> - IBM</li>
+                    <li><strong>SQL for Data Science</strong> - UC Davis</li>
+                    <li><strong>Generative AI Fundamentals</strong> - Google Cloud</li>
+                </ul>
+            </section>
+        </main>
     </div>
-</section>
+</div>
 
-<!-- Experience -->
-<section class="mb-4">
-    <h2>Experience</h2>
-    <div>
-        <h4>Data Science Intern</h4>
-        <p><strong>Company Name:</strong> ABC Technologies</p>
-        <p><strong>Duration:</strong> Jan 2024 - Jun 2024</p>
-        <p><strong>Responsibilities:</strong></p>
-        <ul>
-            <li>Developed a machine learning pipeline for predicting customer churn with 90% accuracy.</li>
-            <li>Worked on data cleaning, feature engineering, and exploratory data analysis for real-world datasets.</li>
-            <li>Created interactive dashboards using Tableau to visualize business metrics.</li>
-            <li>Collaborated with a team of data scientists and software engineers to deploy predictive models.</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Certificates -->
-<section class="mb-4">
-    <h2>Certificates</h2>
-    <ul>
-        <li><strong>Google Data Analytics Professional Certificate</strong> - Coursera</li>
-        <li><strong>TensorFlow Developer Certificate</strong> - Google</li>
-        <li><strong>Python for Everybody Specialization</strong> - University of Michigan</li>
-        <li><strong>Machine Learning with Python</strong> - IBM</li>
-        <li><strong>SQL for Data Science</strong> - UC Davis</li>
-        <li><strong>Generative AI Fundamentals</strong> - Google Cloud</li>
-    </ul>
-</section>
-
-<!-- Interests and Hobbies -->
-<section>
-    <h2>Interests and Hobbies</h2>
-    <p>
-        Beyond my professional pursuits, I enjoy exploring data visualization techniques and writing technical 
-        articles. In my free time, I love reading about advancements in AI and contributing to open-source 
-        projects. My hobbies also include photography, hiking, and playing strategy-based games, which keep 
-        my creative juices flowing.
-    </p>
-</section>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 {% endblock %}

@@ -2,3 +2,32 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("JavaScript loaded successfully!");
 });
+document.addEventListener("DOMContentLoaded", function () {
+    // Sidebar functionality
+    const sidebarLinks = document.querySelectorAll(".sidebar .nav-link");
+    const sections = document.querySelectorAll("main section");
+
+    // Function to show a specific section
+    function showSection(targetId) {
+        sections.forEach((section) => {
+            section.classList.remove("active");
+            if (section.id === targetId) {
+                section.classList.add("active");
+            }
+        });
+    }
+
+    // Attach click event to each sidebar link
+    sidebarLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            const targetId = link.getAttribute("href").substring(1); // Extract the target ID
+            showSection(targetId);
+        });
+    });
+
+    // Show the first section by default
+    if (sections.length > 0) {
+        sections[0].classList.add("active");
+    }
+});

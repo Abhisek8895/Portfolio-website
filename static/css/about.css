@@ -1,36 +1,45 @@
-/* Subtitle Styling */
-.subtitle {
-    font-size: 1.25rem;
-    color: #555;
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 59px;
+    left: 0;
+    height: 100vh;
+    width: 240px;
+    background-color: #343a40;/* Dark gray*/
+    padding: 20px;
+    overflow-y: auto;
 }
 
-/* Detailed Bio Section */
-.text-justify {
-    text-align: justify;
+.sidebar .nav-link {
     font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Headings Styling */
-h1, h2, h4 {
-    font-family: 'Arial', sans-serif;
-    color: #222;
+.sidebar .nav-link:hover {
+    background-color: #495057; /* Slightly lighter gray */
+    color: #ffc107; /* Yellow on hover */
 }
 
-/* Skills Section Styling */
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.sidebar .nav-link.active {
+    background-color: #007bff; /* Blue for active links */
+    color: #ffffff;
 }
 
-ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+/* Main Content */
+.main-content {
+    margin-left: 260px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+/* Hide all sections by default */
+section {
+    display: none;
 }
 
-/* Add space between sections */
-hr {
-    border-top: 2px solid #ddd;
-    margin: 30px 0;
+/* Show active section */
+section.active {
+    display: block;
 }

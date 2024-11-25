@@ -71,3 +71,28 @@ img.rounded-circle {
     color: #777; /* Lighter gray for subtle emphasis */
     line-height: 1.6;
 }
+/* Top Navbar Styling */
+.navbar {
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Full width */
+    z-index: 1030; /* Ensure it stays above other elements */
+    background-color: #343a40; /* Dark gray background */
+    border-bottom: 1px solid #495057; /* Optional border for clarity */
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107; /* Yellow on hover */
+}
+
+.body-content {
+    padding-top: 70px; /* Add padding to prevent content overlap with fixed navbar */
+}
