@@ -1,6 +1,0 @@
-.thumbnail-img {
-    width: 100%; /* Ensures the image fits the card's width */
-    height: 200px; /* Sets a fixed height */
-    object-fit: cover; /* Ensures the image scales proportionally and fills the height */
-    border-radius: 8px; /* Optional: Adds rounded corners to the image */
-}

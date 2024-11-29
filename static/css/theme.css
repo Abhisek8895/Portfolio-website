@@ -35,3 +35,96 @@ a.nav-link.dark-theme {
     background-color: #ffffff;
     color: #000000;
 }
+/* Certificate List Styling for Light Theme */
+.certificate-list li {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: gray; /*Gradient effect */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.certificate-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-list a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.certificate-list a:hover {
+    text-decoration: underline;
+}
+/* Certificate List Styling for Dark Theme */
+body.dark-theme .certificate-list li {
+    background: linear-gradient(to right, #2a2a2a, #f1eeee7f); /* Darker gradient for dark theme */
+    color: #fff;
+}
+
+body.dark-theme .certificate-list li:hover {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-theme .certificate-list a {
+    color: #f8f9fa;
+}
+
+
+
+/* Project Card */
+
+/* Dark Theme Card Styling with Gradient */
+body.dark-theme .project-card {
+    background: linear-gradient(145deg, #ffffff, #2a2a2a); /* White to dark gray gradient */
+    color: #f8f9fa; /* Light text for readability */
+    border: 1px solid #3a3a3a; /* Subtle border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Add hover effect */
+body.dark-theme .project-card:hover {
+    transform: translateY(-5px); /* Slight upward motion */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}
+
+/* Card Title Styling */
+body.dark-theme .card-title {
+    color: #f8f9fa; /* Keep the title color consistent with the theme */
+}
+
+
+/* Modal Content - Light Theme */
+.modal-content {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Modal Content - Dark Theme */
+body.dark-theme .modal-content {
+    background-color: #343a40; /* Darker background for dark theme */
+    color: #f8f9fa;           /* Light text color */
+}
+
+body.dark-theme .modal-header {
+    border-bottom: 1px solid #555555;
+}
+
+body.dark-theme .modal-footer {
+    border-top: 1px solid #555555;
+}
+
+/* Carousel Buttons */
+body.dark-theme .carousel-control-prev-icon,
+body.dark-theme .carousel-control-next-icon {
+    filter: invert(1); /* Invert icons to make them visible on dark background */
+}
+
+/* Close Button */
+body.dark-theme .btn-close {
+    filter: invert(1); /* Make the close button visible in dark mode */
+}

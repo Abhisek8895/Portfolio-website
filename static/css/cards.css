@@ -54,3 +54,30 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Card Thumbnail */
+.thumbnail-img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: contain; /* Change 'cover' to 'contain' to fit the whole image */
+    border-radius: 10px; /* Optional: add some styling like rounded corners */
+    overflow: hidden; /* Prevent overflow if the image dimensions are odd */
+}
+
+.modal-content {
+    border-radius: 10px;
+    max-height: 90vh; /* Ensure it doesn't exceed viewport height */
+    overflow-y: auto; /* Allow scrolling for longer content */
+}
+
+.carousel-inner img {
+    height: auto;
+    max-height: 400px; /* Set a maximum height for images */
+    object-fit: contain; /* Prevent image distortion */
+    border-radius: 8px;
+}
+
+.modal-header .btn-primary {
+    border-radius: 50px;
+}
+
