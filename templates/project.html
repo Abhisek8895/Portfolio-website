@@ -8,7 +8,7 @@
         <!-- Project 1 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project1Modal">
-                <img src="{{ url_for('static', filename='img/favicon1.png') }}" class="card-img-top thumbnail-img" alt="Email Spam Classifier">
+                <img src="{{ url_for('static', filename='img/Email Spam Classifier/favicon1.png') }}" class="card-img-top thumbnail-img" alt="Email Spam Classifier">
                 <div class="card-body text-center">
                     <h5 class="card-title text-truncate">Email Spam Classifier</h5>
                 </div>
@@ -19,7 +19,7 @@
         <!-- Project 2 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project2Modal">
-                <img src="{{ url_for('static', filename='img/Audio classification.png') }}" class="card-img-top thumbnail-img" alt="Audio Classification Model">
+                <img src="{{ url_for('static', filename='img/Audio Classification/Audio classification.png') }}" class="card-img-top thumbnail-img" alt="Audio Classification Model">
                 <div class="card-body text-center">
                     <h5 class="card-title text-truncate">Audio Classification Model</h5>
                 </div>
@@ -29,7 +29,7 @@
         <!-- Project 3 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project3Modal">
-                <img src="{{ url_for('static', filename='img/car price.png') }}" class="card-img-top thumbnail-img" alt="Car Price Prediction">
+                <img src="{{ url_for('static', filename='img/Car Price Prediction/car price.png') }}" class="card-img-top thumbnail-img" alt="Car Price Prediction">
                 <div class="card-body text-center">
                     <h5 class="card-title text-truncate">Car Price Prediction</h5>
                 </div>
@@ -39,7 +39,7 @@
         <!-- Project 4 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project4Modal">
-                <img src="{{ url_for('static', filename='img/web scrapper.png') }}" class="card-img-top thumbnail-img" alt="2024 Paris Olympics Data Scraper">
+                <img src="{{ url_for('static', filename='img/Web Scrapper/web scrapper.png') }}" class="card-img-top thumbnail-img" alt="2024 Paris Olympics Data Scraper">
                 <div class="card-body text-center">
                     <h5 class="card-title text-truncate">Olympics Player Data Scraper</h5>
                 </div>
@@ -49,7 +49,7 @@
         <!-- Project 5 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project5Modal">
-                <img src="{{ url_for('static', filename='img/Weather.png') }}" class="card-img-top thumbnail-img" alt="Weather Application">
+                <img src="{{ url_for('static', filename='img/Weather App/Weather.png') }}" class="card-img-top thumbnail-img" alt="Weather Application">
                 <div class="card-body text-center">
                     <h5 class="card-title text-truncate">Weather Application</h5>
                 </div>
@@ -59,7 +59,7 @@
         <!-- Project 6 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow project-card" data-bs-toggle="modal" data-bs-target="#project6Modal">
-                <img src="{{ url_for('static', filename='img/password.png') }}" class="card-img-top thumbnail-img" alt="Password Manager">
+                <img src="{{ url_for('static', filename='img/Password Manager/password.png') }}" class="card-img-top thumbnail-img" alt="Password Manager">
                 <div class="card-body text-center">
                     <h5 class="card-title text-truncate">Password Manager</h5>
                 </div>
@@ -87,22 +87,38 @@
             <div class="modal-body">
                 <!-- Project Images -->
                 <div class="mb-4">
-                    <div class="carousel slide" id="projectCarousel" data-bs-ride="carousel">
+                    <div class="carousel slide" id="project1Carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ url_for('static', filename='img/Ws1.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Email Spam Classifier/ESC1.png') }}" 
                                      class="d-block w-100" alt="Project Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ url_for('static', filename='img/Ws2.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Email Spam Classifier/ESC2.png') }}" 
                                      class="d-block w-100" alt="Project Image 2">
                             </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Email Spam Classifier/ESC3.png') }}" 
+                                     class="d-block w-100" alt="Project Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Email Spam Classifier/ESC4.png') }}" 
+                                     class="d-block w-100" alt="Project Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Email Spam Classifier/ESC5.png') }}" 
+                                     class="d-block w-100" alt="Project Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Email Spam Classifier/ESC6.png') }}" 
+                                     class="d-block w-100" alt="Project Image 6">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -153,22 +169,42 @@
             <div class="modal-body">
                 <!-- Project Images -->
                 <div class="mb-4">
-                    <div class="carousel slide" id="projectCarousel" data-bs-ride="carousel">
+                    <div class="carousel slide" id="project2Carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ url_for('static', filename='img/Ws1.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC1.png') }}" 
                                      class="d-block w-100" alt="Project Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ url_for('static', filename='img/Ws2.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC2.png') }}" 
                                      class="d-block w-100" alt="Project Image 2">
                             </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC3.png') }}" 
+                                     class="d-block w-100" alt="Project Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC4.png') }}" 
+                                     class="d-block w-100" alt="Project Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC5.png') }}" 
+                                     class="d-block w-100" alt="Project Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC6.png') }}" 
+                                     class="d-block w-100" alt="Project Image 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Audio Classification/AC7.png') }}" 
+                                     class="d-block w-100" alt="Project Image 7">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project2Carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#project2Carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -219,22 +255,39 @@
             <div class="modal-body">
                 <!-- Project Images -->
                 <div class="mb-4">
-                    <div class="carousel slide" id="projectCarousel" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{ url_for('static', filename='img/Ws1.png') }}" 
-                                     class="d-block w-100" alt="Project Image 1">
+                    <div class="carousel slide" id="project3Carousel" data-bs-ride="carousel">
+                        
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ url_for('static', filename='img/Car Price Prediction/CPP1.png') }}" 
+                                         class="d-block w-100" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='img/Car Price Prediction/CPP2.png') }}" 
+                                         class="d-block w-100" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='img/Car Price Prediction/CPP3.png') }}" 
+                                         class="d-block w-100" alt="Project Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='img/Car Price Prediction/CPP4.png') }}" 
+                                         class="d-block w-100" alt="Project Image 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='img/Car Price Prediction/CPP5.png') }}" 
+                                         class="d-block w-100" alt="Project Image 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='img/Car Price Prediction/CPP6.png') }}" 
+                                         class="d-block w-100" alt="Project Image 6">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="{{ url_for('static', filename='img/Ws2.png') }}" 
-                                     class="d-block w-100" alt="Project Image 2">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project3Carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#project3Carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -285,22 +338,22 @@
             <div class="modal-body">
                 <!-- Project Images -->
                 <div class="mb-4">
-                    <div class="carousel slide" id="projectCarousel" data-bs-ride="carousel">
+                    <div class="carousel slide" id="project4Carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ url_for('static', filename='img/Ws1.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Web Scrapper/Ws1.png') }}" 
                                      class="d-block w-100" alt="Project Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ url_for('static', filename='img/Ws2.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Web Scrapper/Ws2.png') }}" 
                                      class="d-block w-100" alt="Project Image 2">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project4Carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#project4Carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -351,22 +404,26 @@
             <div class="modal-body">
                 <!-- Project Images -->
                 <div class="mb-4">
-                    <div class="carousel slide" id="projectCarousel" data-bs-ride="carousel">
+                    <div class="carousel slide" id="project5Carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ url_for('static', filename='img/Ws1.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Weather App/WA1.png') }}" 
                                      class="d-block w-100" alt="Project Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ url_for('static', filename='img/Ws2.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Weather App/WA2.png') }}" 
                                      class="d-block w-100" alt="Project Image 2">
                             </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Weather App/WA3.png') }}" 
+                                     class="d-block w-100" alt="Project Image 3">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project5Carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#project5Carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -416,22 +473,30 @@
             <div class="modal-body">
                 <!-- Project Images -->
                 <div class="mb-4">
-                    <div class="carousel slide" id="projectCarousel" data-bs-ride="carousel">
+                    <div class="carousel slide" id="project6Carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ url_for('static', filename='img/Ws1.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Password Manager/PM1.png') }}" 
                                      class="d-block w-100" alt="Project Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ url_for('static', filename='img/Ws2.png') }}" 
+                                <img src="{{ url_for('static', filename='img/Password Manager/PM2.png') }}" 
                                      class="d-block w-100" alt="Project Image 2">
                             </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Password Manager/PM3.png') }}" 
+                                     class="d-block w-100" alt="Project Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/Password Manager/PM4.png') }}" 
+                                     class="d-block w-100" alt="Project Image 4">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project6Carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#project6Carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
