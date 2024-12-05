@@ -31,3 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
         sections[0].classList.add("active");
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarToggle = document.querySelector('.sidebar-toggle');
+    const navLinks = document.querySelectorAll('.sidebar .nav-link');
+
+    // Toggle sidebar visibility on button click
+    sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+    });
+
+    // Close sidebar when clicking a link inside the sidebar
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+        });
+    });
+});

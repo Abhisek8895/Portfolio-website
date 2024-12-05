@@ -53,3 +53,8 @@ a:hover {
     color: #0056b3;
     text-decoration: underline;
 }
+.resume-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

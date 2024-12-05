@@ -1,13 +1,16 @@
 /* Sidebar Styling */
 .sidebar {
     position: fixed;
-    top: 59px;
+    top: 62px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 56px);
     width: 240px;
-    background-color: #343a40;/* Dark gray*/
+    background-color: #343a40;
     padding: 20px;
     overflow-y: auto;
+    z-index: 1050; /* Ensure it's above the navbar and content */
+    transform: translateX(0); /* Default visible state */
+    transition: transform 0.3s ease-in-out; /* Smooth toggle */
 }
 
 .sidebar .nav-link {
@@ -20,27 +23,64 @@
 }
 
 .sidebar .nav-link:hover {
-    background-color: #495057; /* Slightly lighter gray */
-    color: #ffc107; /* Yellow on hover */
+    background-color: #495057;
+    color: #ffc107;
 }
 
 .sidebar .nav-link.active {
-    background-color: #007bff; /* Blue for active links */
+    background-color: #007bff;
     color: #ffffff;
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 260px; /* Adjust based on sidebar width */
+    margin-left: 260px; /* Leave space for the sidebar */
     padding: 20px;
 }
+
 /* Hide all sections by default */
 section {
     display: none;
 }
 
-/* Show active section */
 section.active {
     display: block;
 }
-/* Certificates */
+
+/* Responsive Styling */
+@media (max-width: 800px) {
+    .sidebar {
+        transform: translateX(-100%); /* Slide sidebar off-screen */
+    }
+
+    .sidebar.show {
+        transform: translateX(0); /* Slide sidebar into view */
+    }
+
+    .main-content {
+        margin-left: 0; /* No extra margin for small screens */
+        padding: 10px;
+    }
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 65px; /* Adjust based on navbar height */
+    right: 15px;
+    z-index: 1100; /* Ensure it appears above everything */
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Icon size */
+}
+
+/* Show the Toggle Button on Small Screens */
+@media (max-width: 800px) {
+    .sidebar-toggle {
+        display: block; /* Show the button */
+    }
+}
